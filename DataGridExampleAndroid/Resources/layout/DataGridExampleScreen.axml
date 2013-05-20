@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Topic"
+        android:gravity="center"
+        android:textSize="21dp" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtAddColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Add Column"
+            android:background="#ff0d12f5"
+            android:textColor="#ff000000"
+            android:padding="6dip" />
+        <TextView
+            android:id="@+id/txtAddRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Add Row"
+            android:layout_marginRight="100dp"
+            android:background="#ff0d12f5"
+            android:textColor="#ff000000"
+            android:padding="6dip" />
+    </RelativeLayout>
+    <GridView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offerGridView" />
+</LinearLayout>
